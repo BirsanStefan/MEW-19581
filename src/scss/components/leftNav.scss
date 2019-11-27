@@ -1,4 +1,44 @@
 .leftNav {
-    width:833px;
+    width:36%;
+    height: calc(100% - 180px);
+    position:absolute;
+    left:0;
+    top:0;
+    background-color: #000000;
+    border-bottom:1px solid #cdcccc;
+    display:flex;
+    justify-content: flex-end;
 
+    .leftNavContent {
+        width:42%;
+        .backMenu {
+            height: 178px;
+            text-align:right;
+            padding:30px 10px 0 0;
+            #backArrow {
+                border:none;
+                background:none;
+            }
+            
+            .fa-long-arrow-alt-left {
+                color:#fff;
+            }
+            
+        }
+        .leftNavItem {
+            width:100%;
+            height: 70px;
+            color:#fff;
+            text-align: center;
+            line-height: 70px;
+            font-size: 24px;
+            font-family: "DejaVu Sans";
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        
+    }
+    .leftNavContent div:nth-child(2) {
+        height: 205px;
+    }
 }

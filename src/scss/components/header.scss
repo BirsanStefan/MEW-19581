@@ -1,17 +1,16 @@
 header {
-    width:100%;
+    width:calc(100% - 40%);
+    margin:auto;
     height: 178px;
     padding-top:30px;
-    padding-left:22px;
     background-color: #fff;
     align-content: space-between;
     .headerItem {
-        width:30%;
         text-align:center;
     }
     .mobileButton {
-        width: 42px;
-        height: 42px;
+        width: 15px;
+        height: 15px;
         /* border: 1px solid #b61c1c; */
         border-radius: 2px;
         color: #b61c1c;
@@ -21,8 +20,6 @@ header {
         transform: rotate(0deg);
         transition: .5s ease-in-out;
         cursor: pointer;
-        z-index: 1000;
-
         & span {
             display: block;
             height: 2px;
@@ -46,9 +43,12 @@ header {
             justify-content: center;
         }
 }
+.logo {
+    width: 17%;
+    margin-left:7%;
+}
 .login {
-    width:220px;
-    
+    width:15%;    
     & span {
         width:30%;
         display:inline-block;
