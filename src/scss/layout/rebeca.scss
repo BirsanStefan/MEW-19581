@@ -1,4 +1,6 @@
-
+.wrapper {
+    font-family: 'Katibeh', cursive;
+}
 .flexSB {
     display:flex;
     justify-content: space-between;
@@ -7,4 +9,42 @@
     display:flex;
     justify-content: center;
     align-items: center;
+}
+.mb30 {
+    margin-bottom:30px;
+}
+.mt20 {
+    margin-top:20px;
+}
+.pageTitle {
+    font-size: 20px;
+    color: #2b2522;
+    text-transform: uppercase;
+    // font-size: 29px;
+    // font-family: "Gotham";
+    // font-weight: bold;
+}
+.red {
+    color: #ef493b;
+}
+.redI {
+    color: #ef493b;
+    font-style: italic;
+
+}
+.text {
+    font-size:16px;
+    line-height: 20px;
+    color: #2b2522;
+    // font-size: 29px;
+    // font-family: "Bembo";
+    // font-weight: bold;
+}
+.redPoem {
+    color: #ef493b;
+    font-style: italic;
+    font-size: 24px;
+}
+.centeredInfo {
+    margin-left:70px;
 }

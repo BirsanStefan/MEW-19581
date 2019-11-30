@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+  <div class="wrapper">
+    @@include('../partials/components/header.html')
+    @@include('../partials/components/leftNav.html')
+    <main>
+          
+          <div class="content">
+              <div class="pageTitle">FROM PIONEER BEGINNINGS TO CERTIFIED ORGANIC.</div>
+              <div class="pageTitle red mb30">WE ARE MOUNT EDWARD</div>
+
+              <div class="centeredInfo mb30">
+                <div>
+                    <span class="poem">our land is</span>
+                    <span class="redPoem">Central Otago</span>
+                </div>
+                <div>
+                    <span class="poem">our mountains are</span>
+                    <span class="redPoem">The Remarkables</span>
+                </div>
+                <div>
+                    <span class="poem">our river</span>
+                    <span class="redPoem">the mighty Kawarau</span>
+                </div>
+                <div>
+                    <span class="poem">our community</span>
+                    <span class="redPoem">Otago</span>
+                </div>
+              </div>
+
+              <div class="imgContainer">
+                <!--<img src="./assets/images/..."><!-->
+              </div>
+              <div class="text mt20">
+                  <p>In 1997 as a  Central Otago pioneer founded winery, we started small, making one wine as a family business, now, decades later, we are still a family business, thriving, with our own vineyards, style and ethos. </p>
+                  <p>Our heart is about making wines that are delicious, textural, subtle, moreish wines. To keep the head happy we grow unique and small batch wines from single vineyard sites, Pinot Noir to Gamay, Chardonnay to Chenin and much more.</p>
+              </div>
+
+              <div class="text mt20">
+                    <p>In 1997 as a  Central Otago pioneer founded winery, we started small, making one wine as a family business, now, decades later, we are still a family business, thriving, with our own vineyards, style and ethos. </p>
+                    <p>Our heart is about making wines that are delicious, textural, subtle, moreish wines. To keep the head happy we grow unique and small batch wines from single vineyard sites, Pinot Noir to Gamay, Chardonnay to Chenin and much more.</p>
+                </div>
+                <div class="text mt20">
+                        <p>In 1997 as a  Central Otago pioneer founded winery, we started small, making one wine as a family business, now, decades later, we are still a family business, thriving, with our own vineyards, style and ethos. </p>
+                        <p>Our heart is about making wines that are delicious, textural, subtle, moreish wines. To keep the head happy we grow unique and small batch wines from single vineyard sites, Pinot Noir to Gamay, Chardonnay to Chenin and much more.</p>
+                    </div>
+
+
+          </div>
+    </main>
+    @@include('../partials/components/footer.html')
+  </div>
+
+  @@include('../partials/scripts/common.html')
+
+  <script>
+    function hideLeftNav() {
+      let nav=document.getElementById('leftNav');
+      nav.classList.remove("leftNav");
+      nav.classList.add("hiddenNav");
+
+    }
+  function showLeftNav(){
+    let nav = document.getElementById('leftNav');
+    nav.classList.remove('hiddenNav');
+    nav.classList.add('leftNav');
+}</script>
+</body>
+
+</html>

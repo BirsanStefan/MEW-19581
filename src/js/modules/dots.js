@@ -29,4 +29,11 @@ const dotsEffect = (() => {
   };
 })();
 
+
+// function hideLeftNav() {
+//   let nav = document.getElementById("leftNav");
+//   nav.style.display=none;
+// }
+
 export default dotsEffect;
+

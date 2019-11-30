@@ -17,6 +17,19 @@
   </div>
 
   @@include('../partials/scripts/common.html')
+
+  <script>
+    function hideLeftNav() {
+      let nav=document.getElementById('leftNav');
+      nav.classList.remove("leftNav");
+      nav.classList.add("hiddenNav");
+
+    }
+  function showLeftNav(){
+    let nav = document.getElementById('leftNav');
+    nav.classList.remove('hiddenNav');
+    nav.classList.add('leftNav');
+}</script>
 </body>
 
 </html>
