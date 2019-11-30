@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+  <div class="wrapper">
+    @@include('../partials/components/header.html')
+    @@include('../partials/components/leftNav.html')
+    <main>
+          
+          <div class="content">
+              <div class="pageTitle">head line here</div>
+              <div class="text mt60">
+                <p>
+                  Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum.
+                </p>
+              </div>
+
+              <div class="videoContent mt80 mb10">
+                <video controls width="250">
+
+                  <source src="/media/examples/flower.webm"
+                          type="video/webm">
+              
+                  <source src="/media/examples/flower.mp4"
+                          type="video/mp4">
+              
+                  Sorry, your browser doesn't support embedded videos.
+              </video>
+              </div>
+
+              <div class="images flexSB mb10">
+                <!-- <img src="">
+                <img src=""> -->
+              </div>
+
+              <div class="imageContainer mb10">
+                <!-- <img src=""> -->
+              </div>
+
+              <div class="pageTitle mb20">2017 MOUNT EDWARD RIESLING</div>
+                <div class="text mb100">
+                  <p>Boremporibus sus doloriatur, odi consecti blabo. Et quo bea vid estis nis explabore et et as coreni omnim dollame ndundam laut rerum nos doluptas velia in restiis sani corpore rae quideriore omnis de nis etur si des qui tectem alis miliqui dionsec tinteseque remquo blat venim qui iusam voluptat lantem a et eos di dolum aces nihit dolorerum vent, officatquas nonsequi autessit que min coremolorat la adipiet aci verum ant, et officabor maximin ciatempe vel maio od moloris ero iniscia dunt. Conse et minctaectur, sunt, volutatemos inctur? At mollia ipisciist que aceatquo occusamus ad mo is aut velesserupid quias aut et pos erro tem el idellorum res culpa il ius, consequi omniste cerisin ciumquas eumquibus.</p>
+                </div>
+              
+
+              <div class="pageTitle mb20">2017 MOUNT EDWARD RIESLING</div>
+                <div class="text mb100">
+                  <p>Boremporibus sus doloriatur, odi consecti blabo. Et quo bea vid estis nis explabore et et as coreni omnim dollame ndundam laut rerum nos doluptas velia in restiis sani corpore rae quideriore omnis de nis etur si des qui tectem alis miliqui dionsec tinteseque remquo blat venim qui iusam voluptat lantem a et eos di dolum aces nihit dolorerum vent, officatquas nonsequi autessit que min coremolorat la adipiet aci verum ant, et officabor maximin ciatempe vel maio od moloris ero iniscia dunt. Conse et minctaectur, sunt, volutatemos inctur? At mollia ipisciist que aceatquo occusamus ad mo is aut velesserupid quias aut et pos erro tem el idellorum res culpa il ius, consequi omniste cerisin ciumquas eumquibus.</p>
+                </div>
+              
+          </div>
+
+          @@include('../partials/components/backButton.html',{"here":"blog.html", "originPage":"Blog"})
+    </main>
+    @@include('../partials/components/footer.html')
+  </div>
+
+  @@include('../partials/scripts/common.html')
+
+  <script>
+    function hideLeftNav() {
+      let nav=document.getElementById('leftNav');
+      nav.classList.remove("leftNav");
+      nav.classList.add("hiddenNav");
+
+    }
+  function showLeftNav(){
+    let nav = document.getElementById('leftNav');
+    nav.classList.remove('hiddenNav');
+    nav.classList.add('leftNav');
+}
+function dropdownMenu(){
+  let dropdown = document.getElementsByClassName('dropdownContent');
+  for(let i = 0; i<dropdown.length; i++) {
+    var dropdownContent = dropdown[i];
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  }
+  
+}
+</script>
+</body>
+
+</html>

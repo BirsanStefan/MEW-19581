@@ -4,7 +4,7 @@
 .leftNav {
     width:33%;
     opacity:1;
-    height: calc(100% - 180px);
+    height: calc(100% - 100px);
     position:absolute;
     left:0;
     top:0;
@@ -16,7 +16,7 @@
     .leftNavContent {
         width:42%;
         .backMenu {
-            height: 178px;
+            height: 98px;
             text-align:right;
             padding:30px 10px 0 0;
             #backArrow {
