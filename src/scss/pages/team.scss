@@ -1,1 +1,32 @@
-/*code here */ 
+.crew {
+    width:100%;
+    
+}
+.crewItem {
+    width:33%;
+}
+.crewText {
+    // font-size: 42px;
+    // line-height: 17px;
+    // font-family: "Bembo";
+    text-align: center;
+    color: #141518;
+    font-size:22px;
+    text-transform: uppercase;
+    margin-bottom:-3px;
+}
+.bordered {
+    border-bottom: 1px solid #2b2522;
+}
+.member {
+    width:100%;
+    .memberPhoto {
+        width:45%;
+        height:125px;
+        background-color:#cccccc;
+    }
+    .memberInfo {
+        width:52%;
+        
+    }
+}
