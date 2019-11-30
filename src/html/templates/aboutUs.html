@@ -11,9 +11,9 @@
           
           <div class="content">
               <div class="pageTitle">FROM PIONEER BEGINNINGS TO CERTIFIED ORGANIC.</div>
-              <div class="pageTitle red mb30">WE ARE MOUNT EDWARD</div>
+              <div class="pageTitle red mb60">WE ARE MOUNT EDWARD</div>
 
-              <div class="centeredInfo mb30">
+              <div class="centeredInfo mb60">
                 <div>
                     <span class="poem">our land is</span>
                     <span class="redPoem">Central Otago</span>
@@ -32,22 +32,30 @@
                 </div>
               </div>
 
-              <div class="imgContainer">
+              <div class="imgContainer mb60">
                 <!--<img src="./assets/images/..."><!-->
               </div>
-              <div class="text mt20">
-                  <p>In 1997 as a  Central Otago pioneer founded winery, we started small, making one wine as a family business, now, decades later, we are still a family business, thriving, with our own vineyards, style and ethos. </p>
-                  <p>Our heart is about making wines that are delicious, textural, subtle, moreish wines. To keep the head happy we grow unique and small batch wines from single vineyard sites, Pinot Noir to Gamay, Chardonnay to Chenin and much more.</p>
+              <div class="redPoem centeredInfo">
+                <span class="spanBlock">All driven by a desire to be</span>
+                <span class="spanBlock">progressive, individual and </span>
+                <span class="spanBlock">good at what we do.</span>
+              </div>
+              <span class="author centeredInfo">DUNCAN FORSYTH, WINE MAKER</span>
+
+              <div class="text mt80 mb60">
+                <p>We are Bio gro certified organic, owning all our fruit  across 5 estate vineyards, all in Central Otago, collectively producing wines of provenance and pleasure alike.</p>
+                <p>We enjoy breaking new ground, the first in New Zealand to make vermouth,  have wine on tap, early adopters of skin contact and minimal sulphur, we continue to seek out the unique. Our choices, style and techniques reflect, we believe, a growing demand for individual and authentic wine.</p>
+                <p>Traditional winemaking, a healthy regard to science, all without a rulebook telling us what to do or how to look. The less you do the better the wine is a truism that guides us via minimal intervention such as no fining, filtration, aids or additives.</p>
+                <p>Our motto, Grow your Own Way, is with a care to all around you, surround yourself with people who think the same and enjoy yourselves. </p>
+                <p>Wine, people, place are all part of this equation, reflected in how we grow, the places you see our wine, our community involvement to what you see in front of you.</p>
+                <p>Talk to us, visit us, pick up a bottle and see how we all fit together.
+                </p>
               </div>
 
-              <div class="text mt20">
-                    <p>In 1997 as a  Central Otago pioneer founded winery, we started small, making one wine as a family business, now, decades later, we are still a family business, thriving, with our own vineyards, style and ethos. </p>
-                    <p>Our heart is about making wines that are delicious, textural, subtle, moreish wines. To keep the head happy we grow unique and small batch wines from single vineyard sites, Pinot Noir to Gamay, Chardonnay to Chenin and much more.</p>
-                </div>
-                <div class="text mt20">
-                        <p>In 1997 as a  Central Otago pioneer founded winery, we started small, making one wine as a family business, now, decades later, we are still a family business, thriving, with our own vineyards, style and ethos. </p>
-                        <p>Our heart is about making wines that are delicious, textural, subtle, moreish wines. To keep the head happy we grow unique and small batch wines from single vineyard sites, Pinot Noir to Gamay, Chardonnay to Chenin and much more.</p>
-                    </div>
+              <div class="images mb60">
+                <!-- <img src="">
+                <img src=""> -->
+              </div>
 
 
           </div>
@@ -68,7 +76,22 @@
     let nav = document.getElementById('leftNav');
     nav.classList.remove('hiddenNav');
     nav.classList.add('leftNav');
-}</script>
+}
+
+function dropdownMenu(){
+  let dropdown = document.getElementsByClassName('dropdownContent');
+  for(let i = 0; i<dropdown.length; i++) {
+    var dropdownContent = dropdown[i];
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  }
+  
+}
+
+</script>
 </body>
 
 </html>
