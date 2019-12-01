@@ -7,12 +7,32 @@
 }
 main {
     width:50%;
+    min-width: 950px;
     margin:auto;
     justify-content: center;
+    min-height: calc(100vh - 198px);
 }
 .content {
     width:68%;
     padding-left: 2%;
     margin-bottom:58px;
     margin:auto;
+}
+
+body{
+    &.leftNavActive{
+        .leftNav{
+            left: 0;
+        }
+    }
+}
+
+.mainContainer{
+    width: 60%;
+    min-width: 1150px;
+    max-width: calc(100% - 30px);
+    margin: auto;
+    @media screen {
+        min-width: initial;
+    }
 }
