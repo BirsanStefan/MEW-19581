@@ -8,7 +8,7 @@
     @@include('../partials/components/header.html')
     @@include('../partials/components/leftNav.html')
     <main>
-          
+          <!-- for more modularity, I've created some helper classes: ex: mt80 (margin-top: 80px) -->
           <div class="content">
               <div class="pageTitle">head line here</div>
               <div class="text mt60">
@@ -29,14 +29,19 @@
                   Sorry, your browser doesn't support embedded videos.
               </video>
               </div>
-
+              <!-- as backround image to crop them -->
               <div class="images flexSB mb10">
-                <!-- <img src="">
-                <img src=""> -->
+                <div class="imgItem imgLeft" style="background-image: url(./assets/images/image2.jpg);">
+
+                </div>
+                <img src="assets/images/image2.jpg" alt="">
+                <img src="assets/images/image3.jpg" alt="">
+                
               </div>
 
+              <!-- as img to if variable height -->
               <div class="imageContainer mb10">
-                <!-- <img src=""> -->
+                <img src="assets/images/image3.jpg" alt="">
               </div>
 
               <div class="pageTitle mb20">2017 MOUNT EDWARD RIESLING</div>
@@ -59,31 +64,7 @@
 
   @@include('../partials/scripts/common.html')
 
-  <script>
-    function hideLeftNav() {
-      let nav=document.getElementById('leftNav');
-      nav.classList.remove("leftNav");
-      nav.classList.add("hiddenNav");
-
-    }
-  function showLeftNav(){
-    let nav = document.getElementById('leftNav');
-    nav.classList.remove('hiddenNav');
-    nav.classList.add('leftNav');
-}
-function dropdownMenu(){
-  let dropdown = document.getElementsByClassName('dropdownContent');
-  for(let i = 0; i<dropdown.length; i++) {
-    var dropdownContent = dropdown[i];
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  }
-  
-}
-</script>
+ 
 </body>
 
 </html>
