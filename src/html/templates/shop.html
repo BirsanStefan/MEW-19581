@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+	<div class="wrapper">
+		@@include('../partials/components/header.html')
+		@@include('../partials/components/leftNav.html')
+		<main class="mainContent mainContainer">
+			<div class="flexContainer">
+				
+				<div class="leftsideContent"></div>
+
+				<div class="smallContent">
+					<h1 class="pageTitle">
+						SHOP . 
+						<br>
+						<span class="red">
+							ALL DELICIOUS. ALL OURS. ALL YOURS.
+						</span>
+					</h1>
+					<div class="text mt30">
+						<p>
+							Open your mind and taste our place with new wine made by old hands and young minds.
+						</p>
+						<p>
+							Some of our wines are made in tiny quantities, our Cellar Club crew get first dibs on these wines due to their limited supply until we are able to make more.
+						</p>
+					</div>
+
+					<div class="mt80 mb10">
+						<p>
+							Everything from single vineyard Pinots to our estate classics, new wines, special bottlings, even some cool tee shirts, get amongst it. 
+						</p>
+					</div>
+
+					<div class="ctaArea">
+
+						<div class="ctaArea1">
+							YES HOOK ME UP!
+						</div>
+						<div class="ctaArea12 red">
+							THE CELLAR CLUB
+						</div>
+						<a href="#" class="redButton button">
+							JOIN HERE
+						</a>
+
+					</div>
+				</div>
+
+				<div class="rightSideContent"></div>
+
+			</div>
+			<div class="flexContainer">
+				<div class="shopList">
+					@@loop('../partials/components/prodItem.html', [
+						{ 
+							"image": "./assets/images/prod1.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						},
+						{ 
+							"image": "./assets/images/prod2.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						},
+						{ 
+							"image": "./assets/images/prod1.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						},
+						{ 
+							"image": "./assets/images/prod2.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						},
+						{ 
+							"image": "./assets/images/prod1.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						},
+						{ 
+							"image": "./assets/images/prod2.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						}
+					])
+				</div>
+			</div>
+		</main>
+		@@include('../partials/components/footer.html')
+	</div>
+
+	@@include('../partials/scripts/common.html')
+
+ 
+</body>
+
+</html>

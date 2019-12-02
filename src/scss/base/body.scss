@@ -16,13 +16,16 @@ body{
         }
     }
 }
-// adaptive images
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-// google map fix
+a{
+    color: inherit;
+}
+
 .gm-style img {max-width: none;}
 
 // hide tel links on desktop
@@ -67,7 +70,7 @@ main {
 }
 
 .smallContent{
-    width: 46%;
+    width: 48%;
     padding-left: 15px;
     padding-right: 15px;
 }
