@@ -2,14 +2,14 @@
     display:none;
 }
 .leftNav {
-    width:33%;
+    width: calc((100% - 1150px)/2 + 1150px*4/15 - 15px;
+    width: calc((100% - 1150px)/2 + 1150px*4/15 - 15px;
+    left: -33%;
+    left: calc(0px - ((100% - 1150px)/2 + 1150px*4/15 - 15px));
+    top: 0;
     opacity:1;
-    // height: calc(100% - 100px);
     height: 100%;
     position:fixed;
-    left:0;
-    top:0;
-    left: -33%;
     background-color: #000000;
     border-bottom:1px solid #cdcccc;
     display:flex;
@@ -26,10 +26,11 @@
             #backArrow {
                 border:none;
                 background:none;
+                cursor: pointer;
             }
             
-            .fa-long-arrow-alt-left {
-                color:#fff;
+            img{
+                width: 26px;
             }
             
         }
@@ -43,8 +44,8 @@
             display:none;
         }
         .leftNavItem {
-            width:100%;
-            display:block;
+            width: 100%;
+            display: block;
             color:#fff;
             text-align: left;
             line-height: 60px;
@@ -52,7 +53,7 @@
             font-family: "DejaVu Sans";
             font-weight: 400;
             text-transform: capitalize;
-            border-bottom:1px solid #cdcccc;
+            border-bottom: 1px solid #cdcccc;
             .leftNavSubitem {
                 font-size:18px;
                 line-height:30px;
@@ -69,16 +70,12 @@
             
         }
         
-        
     }
-    // .shownNav {
-    //     @extend .leftNav;
-    //     width: 36%;
-    //     opacity:1;
-    //     transition: width .75s ease;
- 
-    // }
-    // .leftNavContent div:nth-child(2) {
-    //     height: 205px;
-    // }
+    &.leftNavSecondary{
+        background-image: url(../images/mound-edward-bg.jpg);
+        background-size: cover;
+        background-position: top right;
+    }
 }
+
+

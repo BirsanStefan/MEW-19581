@@ -1,5 +1,5 @@
 .wrapper {
-    font-family: 'Katibeh', cursive;
+
 }
 .flexSB {
     display:flex;
@@ -28,6 +28,9 @@
 .mb100 {
     margin-bottom:100px;
 }
+.mt30 {
+    margin-top:30px;
+}
 .mt40 {
     margin-top:40px;
 }
@@ -45,12 +48,12 @@ a {
 }
 .pageTitle {
     font-size: 20px;
+    line-height: 1.4;
     color: #2b2522;
     text-transform: uppercase;
     display:block;
-    // font-size: 29px;
-    // font-family: "Gotham";
-    // font-weight: bold;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
 }
 .red {
     color: #ef493b;

@@ -4,65 +4,76 @@
 @@include('../partials/head/head.html')
 
 <body>
-  <div class="wrapper">
-    @@include('../partials/components/header.html')
-    @@include('../partials/components/leftNav.html')
-    <main>
-          <!-- for more modularity, I've created some helper classes: ex: mt80 (margin-top: 80px) -->
-          <div class="content">
-              <div class="pageTitle">head line here</div>
-              <div class="text mt60">
-                <p>
-                  Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum.
-                </p>
-              </div>
+	<div class="wrapper">
+		@@include('../partials/components/header.html')
+		@@include('../partials/components/leftNav.html')
+		<main class="mainContent mainContainer">
+			<div class="flexContainer">
+				
+				<div class="leftsideContent"></div>
 
-              <div class="videoContent mt80 mb10">
-                <video controls width="250">
+				<div class="smallContent">
+					<div class="pageTitle">head line here</div>
+					<div class="text mt60">
+						<p>
+							Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum Body copy lorem ipsum.
+						</p>
+					</div>
 
-                  <source src="/media/examples/flower.webm"
-                          type="video/webm">
-              
-                  <source src="/media/examples/flower.mp4"
-                          type="video/mp4">
-              
-                  Sorry, your browser doesn't support embedded videos.
-              </video>
-              </div>
-              <!-- as backround image to crop them -->
-              <div class="images flexSB mb10">
-                <div class="imgItem imgLeft" style="background-image: url(./assets/images/image2.jpg);">
+					<div class="videoContent mt80 mb10">
+						<video controls width="250">
 
-                </div>
-                <img src="assets/images/image2.jpg" alt="">
-                <img src="assets/images/image3.jpg" alt="">
-                
-              </div>
+							<source src="/media/examples/flower.webm"
+											type="video/webm">
+					
+							<source src="/media/examples/flower.mp4"
+											type="video/mp4">
+					
+							Sorry, your browser doesn't support embedded videos.
+					</video>
+					</div>
+					<!-- as backround image to crop them -->
+					<div class="images flexSB mb10">
+						<div class="imgItem imgLeft" style="background-image: url(./assets/images/image2.jpg);">
 
-              <!-- as img to if variable height -->
-              <div class="imageContainer mb10">
-                <img src="assets/images/image3.jpg" alt="">
-              </div>
+						</div>
+						<img src="assets/images/image2.jpg" alt="">
+						<img src="assets/images/image3.jpg" alt="">
+						
+					</div>
 
-              <div class="pageTitle mb20">2017 MOUNT EDWARD RIESLING</div>
-                <div class="text mb100">
-                  <p>Boremporibus sus doloriatur, odi consecti blabo. Et quo bea vid estis nis explabore et et as coreni omnim dollame ndundam laut rerum nos doluptas velia in restiis sani corpore rae quideriore omnis de nis etur si des qui tectem alis miliqui dionsec tinteseque remquo blat venim qui iusam voluptat lantem a et eos di dolum aces nihit dolorerum vent, officatquas nonsequi autessit que min coremolorat la adipiet aci verum ant, et officabor maximin ciatempe vel maio od moloris ero iniscia dunt. Conse et minctaectur, sunt, volutatemos inctur? At mollia ipisciist que aceatquo occusamus ad mo is aut velesserupid quias aut et pos erro tem el idellorum res culpa il ius, consequi omniste cerisin ciumquas eumquibus.</p>
-                </div>
-              
+					<!-- as img to if variable height -->
+					<div class="imageContainer mb10">
+						<img src="assets/images/image3.jpg" alt="">
+					</div>
 
-              <div class="pageTitle mb20">2017 MOUNT EDWARD RIESLING</div>
-                <div class="text mb100">
-                  <p>Boremporibus sus doloriatur, odi consecti blabo. Et quo bea vid estis nis explabore et et as coreni omnim dollame ndundam laut rerum nos doluptas velia in restiis sani corpore rae quideriore omnis de nis etur si des qui tectem alis miliqui dionsec tinteseque remquo blat venim qui iusam voluptat lantem a et eos di dolum aces nihit dolorerum vent, officatquas nonsequi autessit que min coremolorat la adipiet aci verum ant, et officabor maximin ciatempe vel maio od moloris ero iniscia dunt. Conse et minctaectur, sunt, volutatemos inctur? At mollia ipisciist que aceatquo occusamus ad mo is aut velesserupid quias aut et pos erro tem el idellorum res culpa il ius, consequi omniste cerisin ciumquas eumquibus.</p>
-                </div>
-              
-          </div>
+					<div class="pageTitle mb20">2017 MOUNT EDWARD RIESLING</div>
 
-          @@include('../partials/components/backButton.html',{"here":"blog.html", "originPage":"Blog"})
-    </main>
-    @@include('../partials/components/footer.html')
-  </div>
+					<div class="text mb100">
+						<p>Boremporibus sus doloriatur, odi consecti blabo. Et quo bea vid estis nis explabore et et as coreni omnim dollame ndundam laut rerum nos doluptas velia in restiis sani corpore rae quideriore omnis de nis etur si des qui tectem alis miliqui dionsec tinteseque remquo blat venim qui iusam voluptat lantem a et eos di dolum aces nihit dolorerum vent, officatquas nonsequi autessit que min coremolorat la adipiet aci verum ant, et officabor maximin ciatempe vel maio od moloris ero iniscia dunt. Conse et minctaectur, sunt, volutatemos inctur? At mollia ipisciist que aceatquo occusamus ad mo is aut velesserupid quias aut et pos erro tem el idellorum res culpa il ius, consequi omniste cerisin ciumquas eumquibus.</p>
+					</div>
 
-  @@include('../partials/scripts/common.html')
+					<div class="imageContainer mb10">
+						<img src="assets/images/image3.jpg" alt="">
+					</div>
+					
+
+					<div class="pageTitle mb20">2017 MOUNT EDWARD RIESLING</div>
+
+					<div class="text mb100">
+						<p>Boremporibus sus doloriatur, odi consecti blabo. Et quo bea vid estis nis explabore et et as coreni omnim dollame ndundam laut rerum nos doluptas velia in restiis sani corpore rae quideriore omnis de nis etur si des qui tectem alis miliqui dionsec tinteseque remquo blat venim qui iusam voluptat lantem a et eos di dolum aces nihit dolorerum vent, officatquas nonsequi autessit que min coremolorat la adipiet aci verum ant, et officabor maximin ciatempe vel maio od moloris ero iniscia dunt. Conse et minctaectur, sunt, volutatemos inctur? At mollia ipisciist que aceatquo occusamus ad mo is aut velesserupid quias aut et pos erro tem el idellorum res culpa il ius, consequi omniste cerisin ciumquas eumquibus.</p>
+					</div>
+				</div>
+
+				<div class="rightSideContent"></div>
+
+			</div>
+			@@include('../partials/components/backButton.html',{"here":"blog.html", "originPage":"Blog"})
+		</main>
+		@@include('../partials/components/footer.html')
+	</div>
+
+	@@include('../partials/scripts/common.html')
 
  
 </body>

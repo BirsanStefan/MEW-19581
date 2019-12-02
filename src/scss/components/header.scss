@@ -9,8 +9,8 @@ header {
         text-align:center;
     }
     .mobileButton {
-        width: 15px;
-        height: 15px;
+        width: 28px;
+        height: 19px;
         /* border: 1px solid #b61c1c; */
         border-radius: 2px;
         color: #b61c1c;
@@ -22,9 +22,9 @@ header {
         cursor: pointer;
         & span {
             display: block;
-            height: 2px;
+            height: 1px;
             width: 80%;
-            background: #cdcccc;
+            background: #000;
             border-radius: 4px;
             opacity: 1;
             left: 0;
@@ -42,16 +42,20 @@ header {
             align-content: space-between;
             justify-content: center;
         }
-}
-.logo {
-    width: 17%;
-    margin-left:7%;
-}
-.login {
-    width:15%;    
-    & span {
-        width:30%;
-        display:inline-block;
+    }
+    .logo {
+        width: 17%;
+        margin-left:7%;
+    }
+    .headerIcons {
+        width: 143px;
+        display: flex;
+        justify-content: space-between;
     }
 }
+
+.headerIcon{
+    img{
+        max-height: 20px;
+    }
 }
