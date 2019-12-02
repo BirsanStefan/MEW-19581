@@ -6,7 +6,7 @@
     position:relative;
 }
 main {
-    width:50%;
+    width:70%;
     min-width: 950px;
     margin:auto;
     justify-content: center;
@@ -19,6 +19,7 @@ main {
     margin:auto;
 }
 
+
 body{
     &.leftNavActive{
         .leftNav{
@@ -28,9 +29,9 @@ body{
 }
 
 .mainContainer{
-    width: 60%;
+    width: 80%;
     min-width: 1150px;
-    max-width: calc(100% - 30px);
+    // max-width: calc(100% - 30px);
     margin: auto;
     @media screen {
         min-width: initial;

@@ -22,11 +22,29 @@
     width:100%;
     .memberPhoto {
         width:45%;
-        height:125px;
-        background-color:#cccccc;
+        height:150px;
+        // background-color:#cccccc;
+        background-size: cover;
+        margin-top:10px;
+        a {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
     }
     .memberInfo {
         width:52%;
+        a {
+            text-decoration: none;
+            color:#2b2522;
+        }
         
     }
+}
+.redPoemTeam {
+    width:410px;
+    margin-bottom: -0.8em;
+    color: #ef493b;
+    font-style: italic;
+    font-size: 24px;
 }

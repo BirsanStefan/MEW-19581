@@ -10,12 +10,12 @@
     <main>
           
           <div class="content">
-              <div class="pageTitle">vineyards .</div>
-              <div class="pageTitle red mb40">headline</div>
+              <h2 class="pageTitle">vineyards .</h2>
+              <h2 class="pageTitle red mb40">headline</h2>
 
-              <div class="redPoem centeredInfo mb40">
-                  <span class="spanBlock">Our wines contain nothing but grapes.</span>
-                  <span class="spanBlock">How is this possible?</span>
+              <div class="redPoemVineyards centeredInfo mb40">
+                  <p>Our wines contain nothing but grapes.
+                  How is this possible?</p>
               </div>
 
               <div class="text mb60">
@@ -24,20 +24,20 @@
                   <p>We think it important that we certify as it is a good from of accountability, especially when we all have a responsibility to look after our place on this planet.</p>
               </div>
 
-              <div class="pageTitle mb20">GIBBSTON SUB REGION</div>
+              <h2 class="pageTitle mb20"><a href="#">GIBBSTON SUB REGION</a></h2>
               <div class="text mb80">
                   <p>Gibbston is a special place, the start of our wines, and from which a lovely tension and refreshing acidity in our wines come from.</p>
                   <p><span class="infoText">Drumlin</span></p>
               </div>
 
-              <div class="pageTitle mb20">BANNOCKBURN SUB REGION</div>
+              <h2 class="pageTitle mb20"><a href="#">BANNOCKBURN SUB REGION</a></h2>
               <div class="text mb80">
                   <p>We love the breadth and depth that Bannockburn wines bring, which is why we have two vineyards in this area:</p>
                   <p><span class="infoText">Muirkirk on Felton Road</span></p>
                   <p><span class="infoText">Susan’s on Cairnmuir Road</span></p>
               </div>
 
-              <div class="pageTitle mb20">PISA SUB REGION</div>
+              <h2 class="pageTitle mb20"><a href="#">PISA SUB REGION</a></h2>
               <div class="text mb80">
                   <p>Pisa is where the aromatics and delicacy in our wines come from. Something about the special soil or weather here or whatever you have planned to write in the library.</p>
                   <p><span class="infoText">Morrison</span></p>
@@ -52,31 +52,7 @@
 
   @@include('../partials/scripts/common.html')
 
-  <script>
-    function hideLeftNav() {
-      let nav=document.getElementById('leftNav');
-      nav.classList.remove("leftNav");
-      nav.classList.add("hiddenNav");
-
-    }
-  function showLeftNav(){
-    let nav = document.getElementById('leftNav');
-    nav.classList.remove('hiddenNav');
-    nav.classList.add('leftNav');
-}
-function dropdownMenu(){
-  let dropdown = document.getElementsByClassName('dropdownContent');
-  for(let i = 0; i<dropdown.length; i++) {
-    var dropdownContent = dropdown[i];
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  }
-  
-}
-</script>
+ 
 </body>
 
 </html>

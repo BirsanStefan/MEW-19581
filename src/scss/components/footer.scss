@@ -5,11 +5,14 @@ footer {
     position: relative;
     z-index: 1000;
     .footerContent {
-    width:43%;
-    min-width: 900px;
+    width:60%;
+    min-width:900px;
     height:100%;
     margin:auto;
     align-items: center;
+    @media screen and(max-width:1140px){
+        min-width: initial;
+    }
     span {
         display:block;
         color:#cdcccc;
@@ -18,10 +21,10 @@ footer {
         width:30%;
     } 
     .address span {
-        font-size:7px;
+        font-size:14px;
     }
         .address span:first-child {
-            font-size:9px;
+            font-size:16px;
             font-weight: bold;
             color:#fff;
         }
@@ -30,6 +33,7 @@ footer {
         display:flex;
         justify-content: space-around;
         align-items: center;
+        width:200px;
         .social {
             width: 22px;
             height:22px;
@@ -40,7 +44,7 @@ footer {
             width:36px;
             height:36px;
             background-color: #fff;
-            font-size: 7px;
+            font-size: 12px;
             color: #2cabe3;
             font-weight: bold;
             text-align:center;
@@ -48,7 +52,8 @@ footer {
     }
     .copyright span {
         text-transform: uppercase;
-        font-size:7px;
+        font-size:14px;
+        text-align:right;
     }
     .flexCenter {
         display:flex;
