@@ -1,4 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
+body{
+    font-family: minion-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    &.leftNavActive{
+        .leftNav{
+            left: 0;
+        }
+    }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+    color: inherit;
+}
+
+.gm-style img {max-width: none;}
+
+// hide tel links on desktop
+@media only screen and (min-width: 1025px) {
+    a[href^="tel"], a[href^="skype"], a[href^="sms"] {
+    cursor: default;
+    pointer-events: none;
+  }
+}
 .wrapper {
     width:100%;
     margin:auto;
@@ -6,9 +42,9 @@
     position:relative;
 }
 main {
-    width:50%;
     margin:auto;
     justify-content: center;
+    min-height: calc(100vh - 198px);
 }
 .content {
     width:68%;
@@ -16,3 +52,34 @@ main {
     margin-bottom:58px;
     margin:auto;
 }
+
+
+
+.mainContainer{
+    width: 1150px;
+    max-width: calc(100% - 30px);
+    margin: auto;
+    @media screen {
+        min-width: initial;
+    }
+}
+
+
+.flexContainer{
+    display: flex;
+}
+
+.smallContent{
+    width: 48%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.leftsideContent{
+    width: 26%;
+    padding-right: 15px;
+}
+.rightSideContent{
+    width: 26%;
+    padding-left: 15px;
+}
+

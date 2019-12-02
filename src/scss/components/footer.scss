@@ -1,56 +1,61 @@
 footer {
-    width:100%;
-    height:100px;
+    width: 100%;
+    height: 100px;
     background-color: #000;
+    position: relative;
+    z-index: 1000;
     .footerContent {
-    width:43%;
-    height:100%;
-    margin:auto;
-    align-items: center;
-    span {
-        display:block;
-        color:#cdcccc;
-    }
-    .footerItem {
-        width:30%;
-    } 
-    .address span {
-        font-size:7px;
-    }
+        height: 100px;
+        margin: auto;
+        align-items: center;
+        width: 73%;
+        span {
+            display: block;
+            color: #fff;
+        }
+        .footerItem {
+            // width: 30%;
+        } 
+        .address span {
+            font-size: 13px;
+        }
         .address span:first-child {
-            font-size:9px;
+            font-size: 15px;
             font-weight: bold;
-            color:#fff;
+            color: #fff;
         }
-       
-    .logo {
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-        .social {
-            width: 22px;
-            height:22px;
-            background-color:#fff;
-            color:#000;
+           
+        .logo {
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            .social {
+                width: 22px;
+                height:22px;
+                background-color:#fff;
+                color:#000;
+                display: inline-flex;
+                margin-right: 10px;
+            }
+            .logoText {
+                width:36px;
+                height:36px;
+                background-color: #fff;
+                font-size: 10px;
+                color: #2cabe3;
+                font-weight: bold;
+                text-align:center;
+                margin-right: 10px;
+            }
         }
-        .logoText {
-            width:36px;
-            height:36px;
-            background-color: #fff;
-            font-size: 7px;
-            color: #2cabe3;
-            font-weight: bold;
-            text-align:center;
+        .copyright span {
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .flexCenter {
+            display:flex;
+            justify-content: center;
+            align-items: center;
         }
     }
-    .copyright span {
-        text-transform: uppercase;
-        font-size:7px;
-    }
-    .flexCenter {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
 }

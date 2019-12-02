@@ -1,1 +1,92 @@
 /*code here */ 
+.ctaArea1{
+	font-size: 18px;
+	color: #231f20;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 700;
+}
+
+.ctaArea12{
+	font-size: 32px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.ctaArea{
+	text-align: center;
+	margin-top: 60px;
+}
+
+.shopList{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.prodItem{
+	width: calc(33.33% - 30px);
+	padding-left: 15px;
+	padding-right: 15px;
+	display: flex;
+	align-items: flex-end;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+.prodItemLink{
+	width: 42%;
+	text-align: center;
+}
+
+.prodItemDesc{
+	width: 55%;
+	margin-left: 3%;
+}
+
+.prodStatus{
+	font-size: 16px;
+	font-style: italic;
+	color: #ef493b;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.prodTitle{
+	margin-top: 5px;
+	font-family: proxima-nova, sans-serif;
+	color: #231f20;
+	transition: all .25s linear;
+	&:hover{
+		color: #ef493b;
+	}
+}
+
+.prodText{
+	font-size: 15px;
+	line-height: 1.2;
+}
+
+.readMore{
+	color: #ef493b;
+	font-size: 13px;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 700;
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		background-image: url(../images/down.svg);
+		margin-left: 5px;
+		position: relative;
+		top: 2px;
+	}
+}
+
+.prodPrice{
+	font-family: proxima-nova, sans-serif;
+	font-size: 15px;
+	color: #231f20;
+	font-weight: 700;
+	margin-top: 2px;
+}

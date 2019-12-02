@@ -6,13 +6,32 @@
 <body>
   <div class="wrapper">
     @@include('../partials/components/header.html')
-    <main>
-      @@include('../partials/components/leftNav.html')
+    @@include('../partials/components/leftNav.html')
+    <main class="mainContent mainContainer">
+
+		<div class="flexContainer">
+			<div class="leftSideImg">
+				<a href="#">
+					<img src="./assets/images/grow-your-way.svg">
+				</a>
+			</div>
+
+			<!-- for more modularity, I've created some helper classes: ex: mt80 (margin-top: 80px) -->
+			<div class="content60p">
+				<!-- you may delete this placeholder div -->
+				<div class="homePlaceholder" style="background-color: #cdcccc; min-height: calc(100vh - 218px);">
+					
+				</div>
+			</div>
+		</div>
+		
+
     </main>
     @@include('../partials/components/footer.html')
   </div>
 
   @@include('../partials/scripts/common.html')
+
 </body>
 
 </html>
