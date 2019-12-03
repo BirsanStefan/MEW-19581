@@ -6,9 +6,6 @@
     width:33%;
 }
 .crewText {
-    // font-size: 42px;
-    // line-height: 17px;
-    // font-family: "Bembo";
     text-align: center;
     color: #141518;
     font-size:22px;
@@ -18,14 +15,17 @@
 .bordered {
     border-bottom: 1px solid #2b2522;
 }
-.member {
+.memberItem {
     width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
     .memberPhoto {
-        width:45%;
-        height:150px;
-        // background-color:#cccccc;
+        width: 200px;
+        height: 150px;
         background-size: cover;
-        margin-top:10px;
+        background-position: center;
+        margin-top: 0;
         a {
             width: 100%;
             height: 100%;
@@ -33,18 +33,46 @@
         }
     }
     .memberInfo {
-        width:52%;
+        width: calc(100% - 215px);
         a {
             text-decoration: none;
             color:#2b2522;
         }
-        
+    }
+    .memberName,
+    .memberStatus{
+        font-size: 16px;
+        line-height: 1.2;
+        color: #2b2522;
+        text-transform: uppercase;
+        display: block;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .text p{
+        margin-top: 5px;
+    }
+    @media screen and (max-width: 567px) {
+        flex-wrap: wrap;
+        .memberPhoto{
+            width: 100%;
+        }
+        .memberInfo{
+            width: 100%;
+            margin-top: 20px;
+        }
     }
 }
 .redPoemTeam {
-    width:410px;
+    width: 450px;
+    max-width: 100%;
     margin-bottom: -0.8em;
     color: #ef493b;
     font-style: italic;
-    font-size: 24px;
+    font-size: 22px;
+    @media screen and (max-width: 567px) {
+        margin-left: 0;
+    }
 }

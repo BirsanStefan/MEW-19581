@@ -1,1 +1,134 @@
 /*code here */ 
+
+.productPage{
+	margin: auto;
+	margin-bottom: 80px;
+	width: 73%;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: flex;
+	align-items: flex-end;
+	.prodPrice,
+	.prodStatus{
+		font-size: 20px;
+	}
+	.prodTitle{
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	.productImage{
+		width: 35%;
+		margin-bottom: -20px;
+	}
+	.prodItemDesc{
+		width: 64%;
+		padding-left: 0;
+		margin-left: 1%;
+	}
+	@media screen and (max-width: 1023px) {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media screen and (max-width: 767px) {
+		flex-wrap: wrap;
+		.productImage{
+			width: 100%;
+			margin-bottom: 20px;
+			text-align: center;
+			img{
+				max-height: 400px;
+				max-width: 100%;
+			}
+		}
+		.prodItemDesc{
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+}
+
+
+
+.listStockistsOnline{
+	height: 60px;
+	background: #c6c7c9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: proxima-nova, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	padding-left: 15px;
+	padding-right: 15px;
+	a{
+		color: #ef493b;
+		padding-left: 5px;
+		text-decoration: underline;
+	}
+	@media screen and (max-width: 767px) {
+		font-size: 14px;
+	}
+}
+
+.prodData{
+	background-color: #fdeceb;
+	padding: 15px;
+	width: 312px;
+	max-width: 100%;
+	font-size: 16px;
+	margin-top: 35px;
+	.genericTitle{
+		margin-top: 0;
+		margin-bottom: 5px;
+		text-transform: none;
+	}
+	.prodD2{
+		padding-left: 15px;
+	}
+}
+
+.prodButtons{
+	margin-top: 25px;
+}
+
+.iAmMember{
+	margin-top: 15px;
+	display: flex;
+	width: 312px;
+	max-width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	span{
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	@media screen and (max-width: 767px) {
+		span{
+			letter-spacing: 0;
+		}
+	}
+}
+
+.addToCart{
+	margin-top: 40px;
+	button{
+		text-transform: uppercase;
+	}
+	.quantity{
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-family: proxima-nova, sans-serif;
+		font-weight: 600;
+	}
+	input{
+		width: 60px;
+		padding-left: 5px;
+		margin-left: 4px;
+		outline: none;
+	}
+}

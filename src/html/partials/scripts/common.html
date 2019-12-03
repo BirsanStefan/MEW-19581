@@ -1,30 +1,20 @@
 <script>
 
 function hideLeftNav() {
-    //   let nav=document.getElementById('leftNav');
-      document.body.classList.remove("leftNavActive");
-    //   nav.classList.remove("leftNav");
-    //   nav.classList.add("hiddenNav");
-
-    }
-  function showLeftNav(){
-    // let nav = document.getElementById('leftNav');
-    // nav.classList.remove('hiddenNav');
-    // nav.classList.add('leftNav');
-
-    document.body.classList.add("leftNavActive");
+  document.body.classList.remove("leftNavActive");
 }
-function dropdownMenu(){
-  let dropdown = document.getElementsByClassName('dropdownContent');
-  for(let i = 0; i<dropdown.length; i++) {
-    var dropdownContent = dropdown[i];
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  }
-  
+function showLeftNav(){
+  document.body.classList.add("leftNavActive");
 }
+
+var elems = document.querySelectorAll('.hasSubmenu');
+
+elems.forEach(
+  function(elem) {
+    elem.addEventListener('click', function(evt) {
+      evt.target.classList.toggle("openSubmenu");
+    }, true); 
+  }
+);
 
 </script>

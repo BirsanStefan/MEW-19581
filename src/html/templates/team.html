@@ -3,10 +3,13 @@
 
 @@include('../partials/head/head.html')
 
-<body>
+<!-- .woddenLeftNav for the pages where the menu is always active -->
+<body class="woddenLeftNav">
+
   <div class="wrapper">
     @@include('../partials/components/header.html')
     @@include('../partials/components/leftNav.html')
+
     <main class="mainContent mainContainer">
         <div class="flexContainer">
             <div class="leftsideContent"></div>
@@ -14,14 +17,13 @@
             <div class="smallContent">
                 <h2 class="pageTitle">
                     TEAM <br>
-                    <span class="red"></span>
+                    <span class="red">THIS IS WHO WE ARE</span>
                 </h2>
-                <h2 class="pageTitle red mb40">THIS IS WHO WE ARE</h2>
                 <div class="text mb60">
                     <p>As the Wandering Palate aka Curtis Marsh, who whilst awarding Mount Edward Red Wine of the Year, paraphrased it:</p>
                 </div>
 
-                <div class="redPoemTeam centeredInfo">
+                <div class="redPoemTeam centeredInfo mb60">
                     Mount Edward belongs to a wild fermenting gaggle
                     of Central Otago vignerons that have evolved like a
                     Band of Brothers; all to a varying degree recalcitrant,
@@ -32,64 +34,73 @@
 
                 </div>
 
-                <div class="crew mb20 mt60 flexSB">
-                    <span class="crewItem bordered"></span>
-                    <span class="crewItem crewText">meet the crew</span>
-                    <span class="crewItem bordered"></span>
+                <div class="text">
+                    <p>
+                        In 1997 as a  Central Otago pioneer founded winery, we started small, making one wine as a family business, now, decades later, we are still a family business, thriving, with our own vineyards, style and ethos. 
+                    </p>
+                    <p>
+                        Our heart is about making wines that are delicious, textural, subtle, moreish wines. To keep the head happy we grow unique and small batch wines from single vineyard sites, Pinot Noir to Gamay, Chardonnay to Chenin and much more.
+                    </p>
                 </div>
 
-                <div class="member flexSB mb60">
-                    <div class="memberPhoto" style="background-image: url(./assets/images/image3.jpg)"><a href="#"></a></div>
-                    <div class="memberInfo">
-                        <h3 class="pageTitle"><a href="#">John Buchanan</a></h3>
-                        <h3 class="pageTitle mb10">Proprietor</h3>
-                        <div class="text">
-                            <p>John, an Otago native, focuses much of his time and energy in creating people based projects that resonate with our environment, creativity and social sustainability. Mount Edward’s tenets of organics, individualism and community wellbeing are part of our DNA due to him. We are a business that cares about growing our own way as well as our impact on people and place due to his leadership and ethos.</p>
+                <h6 class="sectionTitle mt60">
+                    <span>MEET THE CREW</span>
+                </h6>
+
+                <div class="teamList">
+                    <div class="memberItem">
+                        <div class="memberPhoto" style="background-image: url(./assets/images/image3.jpg)"></div>
+                        <div class="memberInfo">
+                            <h3 class="memberName"><a href="#">John Buchanan</a></h3>
+                            <h3 class="memberStatus">Proprietor</h3>
+                            <div class="text">
+                                <p>John, an Otago native, focuses much of his time and energy in creating people based projects that resonate with our environment, creativity and social sustainability. Mount Edward’s tenets of organics, individualism and community wellbeing are part of our DNA due to him. We are a business that cares about growing our own way as well as our impact on people and place due to his leadership and ethos.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="member flexSB mb60">
-                    <div class="memberPhoto" style="background-image: url(./assets/images/image3.jpg)"><a href="#"></a></div>
-                    <div class="memberInfo">
-                        <h3 class="pageTitle"><a href="#">Duncan Forsyth</a></h3>
-                        <h3 class="pageTitle mb10">slightly smaller cheese than John</h3>
-                        <div class="text">
-                            <p>A long time Central Otago winemaker, managing wines, business, brands and  endeavouring to put our own creative stamp on all whilst doing so. In seeing our  breadth of wines, how we operate and the sense that there is only one Mount Edward; everybody else is taken so choose your own style, this is Duncan’s role, hope you like it.</p>
+                    <div class="memberItem">
+                        <div class="memberPhoto" style="background-image: url(./assets/images/image3.jpg)"></div>
+                        <div class="memberInfo">
+                            <h3 class="memberName"><a href="#">Duncan Forsyth</a></h3>
+                            <h3 class="memberStatus">slightly smaller cheese than John</h3>
+                            <div class="text">
+                                <p>A long time Central Otago winemaker, managing wines, business, brands and  endeavouring to put our own creative stamp on all whilst doing so. In seeing our  breadth of wines, how we operate and the sense that there is only one Mount Edward; everybody else is taken so choose your own style, this is Duncan’s role, hope you like it.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="member flexSB mb60">
-                    <div class="memberPhoto" style="background-image: url(./assets/images/image3.jpg)"><a href="#"></a></div>
-                    <div class="memberInfo">
-                        <h3 class="pageTitle"><a href="#">Tim Austin Moorhouse</a></h3>
-                        <h3 class="pageTitle mb10">grapes and vines and things </h3>
-                        <div class="text">
-                            <p>Tim manages our organic programme, our vineyards and our lands. Extremely capable and aware of our environmental responsibilities Tim he is a legend of the vines with the ability to fix any problem with some wire and duct tape if needed. He actually looks a little more like Ghe Guevara,  at one with the people, at one with the land, that sort of thing and at the end of the day is one of the reasons our wines feel so good. </p>
+                    <div class="memberItem">
+                        <div class="memberPhoto" style="background-image: url(./assets/images/image3.jpg)"></div>
+                        <div class="memberInfo">
+                            <h3 class="memberName"><a href="#">Tim Austin Moorhouse</a></h3>
+                            <h3 class="memberStatus">grapes and vines and things </h3>
+                            <div class="text">
+                                <p>Tim manages our organic programme, our vineyards and our lands. Extremely capable and aware of our environmental responsibilities Tim he is a legend of the vines with the ability to fix any problem with some wire and duct tape if needed. He actually looks a little more like Ghe Guevara,  at one with the people, at one with the land, that sort of thing and at the end of the day is one of the reasons our wines feel so good. </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="member flexSB mb60">
-                    <div class="memberPhoto" style="background-image: url(./assets/images/image3.jpg)"><a href="#"></a></div>
-                    <div class="memberInfo">
-                        <h3 class="pageTitle"><a href="#">Andrew Baker</a></h3>
-                        <h3 class="pageTitle mb10">wines and projects and anything</h3>
-                        <div class="text">
-                            <p>Andrew Barry Berry Baker our  Red Beard Organ Player from Oregon is on our winemaking team now helping run and drive the Mount Edward winery. A professional player, we have only recently discovered his skills,  ranging from consummate organ player to a lover of things natural. Andrew is bringing a sense of style and balance to within our walls. Maude Wines his proving ground and now lucky for us Central Otago his new home. </p>
+                    <div class="memberItem">
+                        <div class="memberPhoto" style="background-image: url(./assets/images/image3.jpg)"></div>
+                        <div class="memberInfo">
+                            <h3 class="memberName"><a href="#">Andrew Baker</a></h3>
+                            <h3 class="memberStatus">wines and projects and anything</h3>
+                            <div class="text">
+                                <p>Andrew Barry Berry Baker our  Red Beard Organ Player from Oregon is on our winemaking team now helping run and drive the Mount Edward winery. A professional player, we have only recently discovered his skills,  ranging from consummate organ player to a lover of things natural. Andrew is bringing a sense of style and balance to within our walls. Maude Wines his proving ground and now lucky for us Central Otago his new home. </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="member flexSB mb60">
-                    <div class="memberPhoto" style="background-image: url(./assets/images/image3.jpg)"><a href="#"></a></div>
-                    <div class="memberInfo">
-                        <h3 class="pageTitle"><a href="#">Kaylene Taylor</a></h3>
-                        <h3 class="pageTitle mb10">EVERYTHING</h3>
-                        <div class="text">
-                            <p>Who’s the boss, Kaylene Taylor is the boss! Running our office as smooth as the V8 she drives we have become a well oiled machine thanks to Kaylene. Want something done, organised, tasted or sent? only one person to turn to and that is Kaylene!
-                                </p>
+                    <div class="memberItem">
+                        <div class="memberPhoto" style="background-image: url(./assets/images/image3.jpg)"></div>
+                        <div class="memberInfo">
+                            <h3 class="memberName"><a href="#">Kaylene Taylor</a></h3>
+                            <h3 class="memberStatus">EVERYTHING</h3>
+                            <div class="text">
+                                <p>Who’s the boss, Kaylene Taylor is the boss! Running our office as smooth as the V8 she drives we have become a well oiled machine thanks to Kaylene. Want something done, organised, tasted or sent? only one person to turn to and that is Kaylene!
+                                    </p>
+                            </div>
                         </div>
                     </div>
                 </div>

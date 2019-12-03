@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+	<div class="wrapper">
+		@@include('../partials/components/header.html')
+		@@include('../partials/components/leftNav.html')
+
+		<main class="mainContent mainContainer">
+			<div class="flexContainer">
+				
+				<!-- for more modularity, I've created some helper classes: ex: mt80 (margin-top: 80px) -->
+				<div class="productPage">
+
+					<div class="productImage">
+						<img src="./assets/images/Bottle.jpg" alt="">
+					</div>
+					<div class="prodItemDesc">
+						<h6 class="prodStatus"> Limited Cellar Club Supply </h6>
+						<h1 class="prodTitle">  MOUNT EDWARD <br> PINOT NOIR  </h1>
+
+						<div class="prodText">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum necessitatibus tenetur amet corrupti possimus culpa similique quam, incidunt earum, omnis aperiam odio optio inventore iusto ullam cupiditate voluptates eos commodi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate laudantium, assumenda fugit beatae delectus molestias reiciendis, fuga, ea officiis consectetur modi alias et magnam id nisi. Tenetur distinctio, amet architecto!
+							</p>
+						</div>
+						<div class="prodPrice">
+							$99.90
+						</div>
+
+						<div class="prodData">
+							<p class="genericTitle mt30">
+								Our Wine Guide:
+							</p>
+
+							<div class="prodDataRow">
+								<span class="prodD1">Drink</span>
+								<span class="prodD2">Now</span>
+							</div>
+
+							<div class="prodDataRow">
+								<span class="prodD1">Keep</span>
+								<span class="prodD2">12˚C</span>
+							</div>
+
+							<div class="prodDataRow">
+								<span class="prodD1">Plus</span>
+								<span class="prodD2">xxx</span>
+							</div>
+
+						</div>
+
+						<div class="addToCart">
+							<form class="cart" action="http://localhost/product/mount-edward-pinot-noir-2017/" method="post" enctype="multipart/form-data">
+								<div class="quantity">
+									<label class="screen-reader-text" for="quantity_5de0411c952dd">Quantity</label>
+									<input type="number" id="quantity_5de0411c952dd" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" inputmode="numeric">
+								</div>
+								<button type="submit" name="add-to-cart" value="10" class="single_add_to_cart_button button redButton alt">Add to cart</button>
+							</form>
+						</div>
+
+						<div class="prodButtons">
+							<a href="#" class="clubMember button redButton">
+								I WANT TO BE IN THE CELLAR CLUB!
+							</a>
+							<div class="iAmMember">
+								<span>I’m a Cellar Club Member</span>
+								<a href="#" class="clubMember button redButton">
+									LOG IN
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+			<div class="mb80">
+				<div class="backButton ">
+					<div class="backButtonText">
+						<p>
+							*Limited supply and pricing available to Cellar Club crew. Some of our wines are made in tiny quantities, our Cellar Club crew get first dibs on these wines due to their limited supply until we are able to make more. 
+						</p>
+					</div>
+				    <a class="backLink" href="./shop.html"><span><i class="fas fa-arrow-left"></i></span>back to shop</a>
+				</div>
+			</div>
+		</main>
+
+		<div class="listStockistsOnline">
+			DON’T WANT TO BUY  ONLINE? FIND A LIST OF STOCKISTS <a href="#"> HERE </a>
+		</div>
+		@@include('../partials/components/footer.html')
+	</div>
+
+	@@include('../partials/scripts/common.html')
+
+ 
+</body>
+
+</html>

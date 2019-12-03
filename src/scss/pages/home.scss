@@ -3,9 +3,28 @@
     margin-left: 6.66%;
     padding-left: 15px;
     padding-right: 15px;
+    @media screen and (max-width: 1024px) {
+    	width: 30%;
+		margin-left: 0;
+		padding-left: 0;
+    }
+    @media screen and (max-width: 667px) {
+		width: 100%;
+		padding-right: 0;
+		max-width: 250px;
+		margin-bottom: 25px;
+    }
 }
 .content60p{
 	width: 60%;
 	padding-left: 15px;
 	padding-right: 15px;
+	@media screen and (max-width: 1024px) {
+    	width: 70%;
+    	padding-right: 0;
+    }
+    @media screen and (max-width: 667px) {
+		width: 100%;
+		padding-left: 0;
+    }
 }

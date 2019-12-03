@@ -1,32 +1,25 @@
 .poem {
-    font-size:16px;
+    font-size: 14px;
     text-transform: uppercase;
     color:#2b2522;
     display:inline-block;
     font-weight: bold;
-
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
 }
-// .imgContainer {
-//     width:100%;
-//     height:250px;
-//     background-color: #cccccc;
-
-    
-// }
-
 .redPoemAbout {
     width:250px;
     margin-bottom: -0.8em;
     color: #ef493b;
     font-style: italic;
     font-size: 24px;
+    font-weight: 600;
 }
 .author {
     color: #ef493b;
-    font-size:14px;
+    font-size: 12px;
     text-transform: uppercase;
     display:block;
-
 }
 img {
     background-size: cover;
@@ -37,8 +30,8 @@ img {
     height:170px;
     display:flex;
     justify-content: space-between;
-    // background-color: #cccccc;
     .imgContent {
+        display: block;
         width:49%;
         height:100%;
         background-size: cover;

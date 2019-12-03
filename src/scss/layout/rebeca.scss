@@ -10,36 +10,7 @@
     justify-content: center;
     align-items: center;
 }
-.mb10 {
-    margin-bottom:10px;
-}
-.mb20 {
-    margin-bottom:20px;
-}
-.mb40 {
-    margin-bottom:40px;
-}
-.mb60 {
-    margin-bottom:60px;
-}
-.mb80 {
-    margin-bottom:80px;
-}
-.mb100 {
-    margin-bottom:100px;
-}
-.mt30 {
-    margin-top:30px;
-}
-.mt40 {
-    margin-top:40px;
-}
-.mt60 {
-    margin-top:60px;
-}
-.mt80 {
-    margin-top:80px;
-}
+
 a {
     text-decoration: none;
     &:active {
@@ -54,6 +25,17 @@ a {
     display:block;
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
+    &:before{
+        content: "";
+        width: 75px;
+        height: 2px;
+        background: #000;
+        display: block;
+        margin-bottom: 35px;
+    }
+    @media screen and (max-width: 567px) {
+        font-size: 16px;
+    }
 }
 .red {
     color: #ef493b;
@@ -64,20 +46,28 @@ a {
 
 }
 .text {
-    font-size:16px;
+    font-size: 14px;
     line-height: 20px;
     color: #2b2522;
-    // font-size: 29px;
-    // font-family: "Bembo";
-    // font-weight: bold;
+    a{
+        color: #ef493b;
+        text-decoration: underline;
+    }
 }
 .redPoem {
     color: #ef493b;
     font-style: italic;
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 600;
+    @media screen and (max-width: 567px) {
+        font-size: 20px;
+    }
 }
 .centeredInfo {
     margin-left:70px;
+    @media screen and (max-width: 480px) {
+        margin-left: 0;
+    }
 }
 .spanBlock {
     display:block;

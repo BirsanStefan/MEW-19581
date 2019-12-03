@@ -1,1 +1,92 @@
 /*code here */ 
+
+.cellarClubCols{
+	margin: 100px auto;
+	.col50{
+		&:first-child{
+			border-right: 1px solid #d5d5d5; 
+		}
+		padding-right: 30px;
+
+		&:last-child{
+			padding-right: 0;
+		}
+	}
+	ul{
+		list-style-type: none;
+		padding-left: 0;
+		li{
+			padding-left: 10px;
+			position: relative;
+			margin-bottom: .7em;
+			&:before{
+				content: "-";
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+	@media screen and (max-width: 567px) {
+		margin: 25px auto;
+		.col50{
+			&:first-child{
+				border-right: none;
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+.formItem{
+	margin-bottom: 12px;
+}
+.formElement{
+	width: 100%;
+	border: 1px solid #c6c7c9;
+	padding: 8px 10px;
+	color: #2b2522;
+	outline: none;
+	&:focus{
+		background: #fafafa;
+	}
+}
+
+textarea.formElement{
+	min-height: 150px;
+	resize: none;
+}
+
+.wineSelectionItem{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 6px;
+	width: 230px;
+	@media screen and (max-width: 567px) {
+		width: 100%;
+	}
+}
+
+.wineTitle{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	label{
+		display: flex;
+		input[type="checkbox"]{
+			margin-left: 0;
+		}
+	}
+}
+
+.winePrice{
+	font-weight: 700;
+	font-size: 14px;
+	font-family: proxima-nova, sans-serif
+}
+
+.formButtonSubmit{
+	width: 250px;
+	max-width: 100%;
+}

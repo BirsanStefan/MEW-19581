@@ -44,18 +44,78 @@ header {
         }
     }
     .logo {
-        width: 17%;
-        margin-left:7%;
+        width: 195px;
+        margin-left:8%;
     }
     .headerIcons {
         width: 143px;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 567px) {
+            display: none;
+        }
     }
 }
 
 .headerIcon{
+    height: 22px;
+    position: relative;
     img{
-        max-height: 20px;
+        max-height: 100%;
     }
+    .badge{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: #ef493b;
+        color: #fff;
+        border-radius: 50%;
+        font-family: proxima-nova, sans-serif;
+        font-size: 9px;
+        font-weight: 600;
+        top: 0;
+        right: -10px;
+    }
+
+    .userBadge{
+        right: -8px;
+        .userBadgeSymbol{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 9px;
+                background-color: #fff;
+                left: 9px;
+                top: 2px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 6px;
+                height: 2px;
+                background-color: #fff;
+                left: 5px;
+                top: 10px;
+            }
+        }
+    }
+
+
+}
+
+.headerIcon{
+    
 }

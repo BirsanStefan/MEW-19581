@@ -3,9 +3,13 @@
 }
 
 .redPoemVineyards {
-    width:300px;
+    width: 420px;
+    max-width: 100%;
     margin-bottom: -0.8em;
     color: #ef493b;
     font-style: italic;
     font-size: 24px;
+    @media screen and (max-width: 567px) {
+        margin-left: 0;
+    }
 }

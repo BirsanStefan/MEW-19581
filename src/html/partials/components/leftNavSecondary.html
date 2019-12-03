@@ -1,16 +1,28 @@
-<nav class="leftNav leftNavSecondary" id="leftNav">
+<nav class="leftNav leftNavSecondary">
     <div class="leftNavContent">
         <div class="backMenu">
-            <span id="backArrow" onclick="hideLeftNav()">
+            <span class="backArrow" onclick="hideLeftNav()">
                 <img src="./assets/images/hide-arrow.svg" alt="">
             </span>
         </div>
-        <button class="leftNavItem" id="dropdown" onclick="dropdownMenu()">Mount Edward</button>
-        <div class="leftNavItem dropdownContent">
-            <a class="leftNavSubitem" href="./aboutUs.html">about us</a>
-            <a class="leftNavSubitem" href="./team.html">team</a>
-            <a class="leftNavSubitem" href="./vineyards.html">vineyards</a>
-            <a class="leftNavSubitem" href="./wines.html">wines</a>
-        </div>
+        <ul class="leftMenu">
+            <li class="leftMenuItem">
+                <a href="#" class="leftMenuItemLink">Mount Edward</a>
+                <ul class="subMenu">
+                    <li class="subMenuItem">
+                        <a href="./aboutUs.html" class="subMenuItemLink">About us</a>
+                    </li>
+                    <li class="subMenuItem">
+                        <a href="./team.html" class="subMenuItemLink">Team</a>
+                    </li>
+                    <li class="subMenuItem">
+                        <a href="./vineyards.html" class="subMenuItemLink">Vineyards</a>
+                    </li>
+                    <li class="subMenuItem">
+                        <a href="./wines.html" class="subMenuItemLink">Wines</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </nav>

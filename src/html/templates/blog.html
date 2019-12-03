@@ -4,22 +4,88 @@
 @@include('../partials/head/head.html')
 
 <body>
-  
-  <div class="wrapper">
-    @@include('../partials/components/header.html')
-    @@include('../partials/components/leftNav.html')
-    <main>
-          <div class="leftSideImg">
-            <img src="./assets/images/Grow-Your-own-way.png">
-          </div>
-          <div class="content"></div>
-    </main>
-    @@include('../partials/components/footer.html')
-  </div>
+	<div class="wrapper">
+		@@include('../partials/components/header.html')
+		@@include('../partials/components/leftNav.html')
+		<main class="mainContent mainContainer">
+			<div class="flexContainer">
+							
+				<!-- for more modularity, I've created some helper classes: ex: mt80 (margin-top: 80px) -->
+				<div class="smallContent">
+					<h1 class="pageTitle">
+						THE LIBRARY .
+						<br>
+						<span class="red">ALL THE THINGS YOU ALWAYS WANTED TO KNOW</span>
+					</h1>
+					<div class="text mt30">
+						<p>
+							You found a bottomless barrel of knowledge, wine wisdom and random facts. Pour yourself a glass, start browsing and lose track of time. If you have any questions you can’t find the answer to, just get in touch and ask us!. 
+						</p>
+					</div>
+				</div>
 
-  @@include('../partials/scripts/common.html')
 
+				<div class="blogList">
+					<h6 class="sectionTitle mt80 mb40">
+						<span>WHATE WE'RE UP TO</span>
+					</h6>
 
+					<div class="blogContainer">
+
+						@@loop('../partials/components/blogItem.html', [
+							{ 
+								"image": "./assets/images/image3.jpg",
+								"title": "NEW GRAFITI ART",
+								"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+							},
+							{ 
+								"image": "./assets/images/image2.jpg",
+								"title": "SOME LONGER TITLE ON 2 ROWS",
+								"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+							},
+							{ 
+								"image": "./assets/images/image3.jpg",
+								"title": "NEW GRAFITI ART",
+								"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+							}
+						])
+					</div>
+
+					<h6 class="sectionTitle mt80 mb40">
+						<span>Old Knowledge</span>
+					</h6>
+
+					<div class="blogContainer mb80">
+
+						@@loop('../partials/components/blogItem.html', [
+							{ 
+								"image": "./assets/images/image2.jpg",
+								"title": "NEW GRAFITI ART",
+								"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+							},
+							{ 
+								"image": "./assets/images/image3.jpg",
+								"title": "NEW GRAFITI ART",
+								"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+							},
+							{ 
+								"image": "./assets/images/image2.jpg",
+								"title": "NEW GRAFITI ART",
+								"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+							}
+						])
+					</div>
+				</div>
+				
+
+			</div>
+		</main>
+		@@include('../partials/components/footer.html')
+	</div>
+
+	@@include('../partials/scripts/common.html')
+
+ 
 </body>
 
 </html>

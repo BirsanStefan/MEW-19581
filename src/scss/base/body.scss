@@ -10,9 +10,38 @@ body{
     font-weight: 400;
     font-style: normal;
     margin: 0;
+    font-size: 14px;
+    color: #2b2522;
+
     &.leftNavActive{
         .leftNav{
             left: 0;
+        }
+    }
+
+    &.woddenLeftNav{
+        @media screen and (min-width: 768px) {
+            .leftNav{
+                left: 0;
+            }
+        }
+    }
+    &.woddenLeftNav{
+        .leftNav{
+            background-image: url(../images/mound-edward-bg.jpg);
+            background-size: cover;
+            background-position: top right;
+            &:after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #00000052;
+                transition: all .25s linear;
+            }
         }
     }
 }
@@ -26,6 +55,15 @@ a{
     color: inherit;
 }
 
+p{
+    margin-top: .8em;
+    margin-bottom: .8em;
+}
+
+.text-center{
+    text-align: center;
+}
+
 .gm-style img {max-width: none;}
 
 // hide tel links on desktop
@@ -35,6 +73,21 @@ a{
     pointer-events: none;
   }
 }
+
+::placeholder {
+    color: #c6c7c9;
+    opacity: 1; 
+}
+
+:-ms-input-placeholder {
+    color: #c6c7c9;
+}
+
+::-ms-input-placeholder {
+    color: #c6c7c9;
+}
+
+
 .wrapper {
     width:100%;
     margin:auto;
@@ -53,8 +106,6 @@ main {
     margin:auto;
 }
 
-
-
 .mainContainer{
     width: 1150px;
     max-width: calc(100% - 30px);
@@ -64,22 +115,100 @@ main {
     }
 }
 
-
 .flexContainer{
     display: flex;
+    flex-wrap: wrap;
 }
+
+.content75p{
+    margin: auto;
+    width: 73%;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (max-width: 1023px) {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.col50{
+    width: calc(50% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    @media screen and (max-width: 567px) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.col100{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    @media screen and (max-width: 567px) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.minMarg{
+    margin-left: -10px;
+    margin-right: -10px;
+    @media screen and (max-width: 567px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 
 .smallContent{
     width: 48%;
     padding-left: 15px;
     padding-right: 15px;
+    margin: auto;
+    @media screen and (max-width: 1023px) {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 .leftsideContent{
     width: 26%;
     padding-right: 15px;
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
 }
 .rightSideContent{
     width: 26%;
     padding-left: 15px;
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
 }
 
+
+.leftNavActive{
+    @media screen and (max-width: 1023px) {
+        .smallContent{
+            width: calc(100% - 250px);
+            margin-left: 250px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        
+
+        .backMenu{
+            // display: none;
+        }
+        .smallContent{
+            width: 100%;
+            margin-top: 30px;
+            margin-left: 0;
+        }
+    }
+}

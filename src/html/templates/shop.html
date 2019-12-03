@@ -12,7 +12,7 @@
 				
 				<div class="leftsideContent"></div>
 
-				<div class="smallContent">
+				<div class="smallContent smallContentSingle">
 					<h1 class="pageTitle">
 						SHOP . 
 						<br>
@@ -29,7 +29,7 @@
 						</p>
 					</div>
 
-					<div class="mt80 mb10">
+					<div class="mt60 mb10">
 						<p>
 							Everything from single vineyard Pinots to our estate classics, new wines, special bottlings, even some cool tee shirts, get amongst it. 
 						</p>
@@ -54,6 +54,11 @@
 
 			</div>
 			<div class="flexContainer">
+				<h6 class="sectionTitle mt80 mb60">
+					<span>SINGLE VINEYARD WINES</span>
+				</h6>
+
+				<!-- pictures should be chosen to match the design - portrait, preferably transparent png -->
 				<div class="shopList">
 					@@loop('../partials/components/prodItem.html', [
 						{ 
@@ -76,7 +81,16 @@
 							"title": "MOUNT EDWARD PINOT NOIR",
 							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 							"price": "$99.90"
-						},
+						}
+					])
+				</div>
+
+				<h6 class="sectionTitle mt80 mb60">
+					<span>MOUNT EDWARD WINES</span>
+				</h6>
+
+				<div class="shopList">
+					@@loop('../partials/components/prodItem.html', [
 						{ 
 							"image": "./assets/images/prod2.png", 
 							"status": "Limited Cellar Club Supply",
@@ -100,8 +114,73 @@
 						}
 					])
 				</div>
+
+				<h6 class="sectionTitle mt80 mb60">
+					<span>HEADLINE</span>
+				</h6>
+
+				<div class="shopList">
+					@@loop('../partials/components/prodItem.html', [
+						{ 
+							"image": "./assets/images/prod1.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						},
+						{ 
+							"image": "./assets/images/prod2.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						},
+						{ 
+							"image": "./assets/images/prod1.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						}
+					])
+				</div>
+
+				<h6 class="sectionTitle mt80 mb60">
+					<span>MERCHANDISE</span>
+				</h6>
+
+				<div class="shopList mb80">
+					@@loop('../partials/components/prodItem.html', [
+						{ 
+							"image": "./assets/images/merchandise.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						},
+						{ 
+							"image": "./assets/images/merchandise.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						},
+						{ 
+							"image": "./assets/images/merchandise.png", 
+							"status": "Limited Cellar Club Supply",
+							"title": "MOUNT EDWARD PINOT NOIR",
+							"text": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+							"price": "$99.90"
+						}
+					])
+				</div>
+
 			</div>
 		</main>
+
+		<div class="listStockistsOnline">
+			DON’T WANT TO BUY  ONLINE? FIND A LIST OF STOCKISTS <a href="#"> HERE </a>
+		</div>
 		@@include('../partials/components/footer.html')
 	</div>
 

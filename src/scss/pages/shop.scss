@@ -1,15 +1,19 @@
 /*code here */ 
 .ctaArea1{
-	font-size: 18px;
+	font-size: 16px;
 	color: #231f20;
 	font-family: proxima-nova, sans-serif;
 	font-weight: 700;
 }
 
 .ctaArea12{
-	font-size: 32px;
-	margin-top: 10px;
-	margin-bottom: 15px;
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	@media screen and (max-width: 767px) {
+		font-size: 24px;
+	}
 }
 
 .ctaArea{
@@ -23,13 +27,21 @@
 }
 
 .prodItem{
-	width: calc(33.33% - 30px);
+	width: 33.33%;
 	padding-left: 15px;
 	padding-right: 15px;
 	display: flex;
 	align-items: flex-end;
 	margin-top: 45px;
 	margin-bottom: 45px;
+	@media screen and (max-width: 1023px) {
+		width: 100%;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .prodItemLink{
@@ -71,6 +83,9 @@
 	font-size: 13px;
 	font-family: proxima-nova, sans-serif;
 	font-weight: 700;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: block;
 	&:after{
 		content: "";
 		display: inline-block;

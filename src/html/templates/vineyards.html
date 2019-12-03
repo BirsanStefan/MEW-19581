@@ -3,49 +3,58 @@
 
 @@include('../partials/head/head.html')
 
-<body>
+<!-- .woddenLeftNav for the pages where the menu is always active -->
+<body class="woddenLeftNav">
   <div class="wrapper">
     @@include('../partials/components/header.html')
     @@include('../partials/components/leftNav.html')
-    <main>
-          
-          <div class="content">
-              <h2 class="pageTitle">vineyards .</h2>
-              <h2 class="pageTitle red mb40">headline</h2>
 
-              <div class="redPoemVineyards centeredInfo mb40">
-                  <p>Our wines contain nothing but grapes.
-                  How is this possible?</p>
-              </div>
+    <main class="mainContent mainContainer">
+      <div class="flexContainer">
+        <div class="leftsideContent"></div>
+      
+        <div class="smallContent">
+            <h2 class="pageTitle">
+              Vineyards .
+              <br>
+              <span class="red">headline</span>
+            </h2>
 
-              <div class="text mb60">
-                  <p>We produce outstanding wines because we have our own vineyards and grow our own fruit across the best sub regions in Central Otago.</p>
-                  <p>We grow all our own fruit organically under Bio gro Certification. Organics is a no brainer for us, both philosophically and for the health of our vineyard. Our wines have more vitality and if they are to taste of place, or represent us as individuals, then why on earth would we want to look after our vineyards in any other fashion.</p>
-                  <p>We think it important that we certify as it is a good from of accountability, especially when we all have a responsibility to look after our place on this planet.</p>
-              </div>
+            <div class="redPoemVineyards centeredInfo mb40">
+                <p>Our wines contain nothing but grapes. <br>
+                How is this possible?</p>
+            </div>
 
-              <h2 class="pageTitle mb20"><a href="#">GIBBSTON SUB REGION</a></h2>
-              <div class="text mb80">
-                  <p>Gibbston is a special place, the start of our wines, and from which a lovely tension and refreshing acidity in our wines come from.</p>
-                  <p><span class="infoText">Drumlin</span></p>
-              </div>
+            <div class="text mb60">
+                <p>We produce outstanding wines because we have our own vineyards and grow our own fruit across the best sub regions in Central Otago.</p>
+                <p>We grow all our own fruit organically under Bio gro Certification. Organics is a no brainer for us, both philosophically and for the health of our vineyard. Our wines have more vitality and if they are to taste of place, or represent us as individuals, then why on earth would we want to look after our vineyards in any other fashion.</p>
+                <p>We think it important that we certify as it is a good from of accountability, especially when we all have a responsibility to look after our place on this planet.</p>
+            </div>
 
-              <h2 class="pageTitle mb20"><a href="#">BANNOCKBURN SUB REGION</a></h2>
-              <div class="text mb80">
-                  <p>We love the breadth and depth that Bannockburn wines bring, which is why we have two vineyards in this area:</p>
-                  <p><span class="infoText">Muirkirk on Felton Road</span></p>
-                  <p><span class="infoText">Susan’s on Cairnmuir Road</span></p>
-              </div>
+            <h2 class="genericTitle mb20">GIBBSTON SUB REGION</h2>
+            <div class="text mb80">
+                <p>Gibbston is a special place, the start of our wines, and from which a lovely tension and refreshing acidity in our wines come from.</p>
+                <p><strong>Drumlin,</strong> Info text here</p>
+            </div>
 
-              <h2 class="pageTitle mb20"><a href="#">PISA SUB REGION</a></h2>
-              <div class="text mb80">
-                  <p>Pisa is where the aromatics and delicacy in our wines come from. Something about the special soil or weather here or whatever you have planned to write in the library.</p>
-                  <p><span class="infoText">Morrison</span></p>
-                  <p><span class="infoText">Pia Terrace</span></p>
-              </div>
+            <h2 class="genericTitle mb20">BANNOCKBURN SUB REGION</h2>
+            <div class="text mb80">
+                <p>We love the breadth and depth that Bannockburn wines bring, which is why we have two vineyards in this area:</p>
 
+                <p><strong>Muirkirk on Felton Road,</strong> Info text here</p>
+                <p><strong>Susan’s on Cairnmuir Road,</strong> Info text here</p>
+            </div>
 
-          </div>
+            <h2 class="genericTitle mb20">PISA SUB REGION</h2>
+            <div class="text mb80">
+                <p>Pisa is where the aromatics and delicacy in our wines come from. Something about the special soil or weather here or whatever you have planned to write in the library.</p>
+
+                <p><strong>Morrison,</strong> Info text here</p>
+                <p><strong>Pia Terrace,</strong> Info text here</p>
+            </div>
+        </div>
+        <div class="rightSideContent"></div>
+      </div>
     </main>
     @@include('../partials/components/footer.html')
   </div>

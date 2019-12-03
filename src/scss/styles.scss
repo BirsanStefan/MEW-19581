@@ -19,3 +19,42 @@
 
 //* Components *//
 @import 'components/main';
+
+
+
+.mb10 {
+    margin-bottom:10px;
+}
+.mb20 {
+    margin-bottom:20px;
+}
+.mb40 {
+    margin-bottom:40px;
+}
+.mb60 {
+    margin-bottom:60px;
+}
+.mb80 {
+    margin-bottom:80px;
+}
+.mb100 {
+    margin-bottom:100px;
+}
+.mt30 {
+    margin-top:30px;
+}
+.mt40 {
+    margin-top:40px;
+}
+.mt60 {
+    margin-top:60px;
+}
+.mt80 {
+    margin-top:80px;
+    @media screen and (max-width: 767px) {
+        margin-top: 50px;
+    }
+}
+.noMgB{
+    margin-bottom: 0;
+}

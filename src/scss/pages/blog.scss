@@ -1,1 +1,33 @@
 /*code here */ 
+.blogContainer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.blogItem{
+	width: 26.66%;
+	margin-right: 3.33%;
+	margin-left: 3.33%;
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+}
+
+.blogItemImage{
+	display: inline-block;
+	width: 100%;
+	max-width: 300px;
+	height: 150px;
+	background-size: cover;
+	background-position: center;
+}
+
+.blogItemTitle{
+	font-family: proxima-nova, sans-serif;
+	margin-top: 25px;
+}

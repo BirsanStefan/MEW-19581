@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+	<div class="wrapper">
+		@@include('../partials/components/header.html')
+		@@include('../partials/components/leftNav.html')
+		<main class="mainContent mainContainer">
+			<div class="flexContainer">
+							
+				<!-- for more modularity, I've created some helper classes: ex: mt80 (margin-top: 80px) -->
+				<div class="smallContent mb80">
+					<h1 class="pageTitle">
+						CONTACT .
+						<br>
+						<span class="red">HERE’S HOW YOU GET HOLD OF US</span>
+					</h1>
+					<div class="text mt30">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse praesentium ipsam ullam veritatis nisi voluptas fugit rerum minima distinctio ratione expedita, exercitationem delectus voluptates, harum perspiciatis, quia commodi odit deserunt.
+						</p>
+					</div>
+
+					<h6 class="sectionTitle mt80">
+						<span>WRITE US</span>
+					</h6>
+
+					<div class="text">
+						<p>
+							Email us on <a href="mailto:howdy@mountedward.com">howdy@mountedward.com</a> or use the form below:
+						</p>
+					</div>
+
+					<form action="">
+						<div class="flexContainer minMarg mt30">
+							<div class="col50 formItem">
+								<input type="text" class="formElement" placeholder="FIRST NAME">
+							</div>
+							<div class="col50 formItem">
+								<input type="text" class="formElement" placeholder="LAST NAME">
+							</div>
+							<div class="col50 formItem">
+								<input type="email" class="formElement" placeholder="EMAIL">
+							</div>
+							<div class="col50 formItem">
+								<input type="text" class="formElement" placeholder="PHONE">
+							</div>
+							<div class="col100 formItem">
+								<textarea class="formElement" placeholder="I WOULD LIKE THE FOLLOWING WINES..."></textarea>
+							</div>
+						</div>
+
+						<button class="button redButton formButtonSubmit" type="submit">SEND</button>
+					</form>
+
+					<h6 class="sectionTitle mt80">
+						<span>VISIT US</span>
+					</h6>
+					<div class="text mt30">
+						<p>
+							Cellar door open by appointment only, please call 03 442 6113
+						</p>
+						<p>
+							Our address is 34 Coalpit Road, Gibbston 9371, Otago, New Zealand
+						</p>
+					</div>
+
+					<div class="iframeMap">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.994048970819!2d168.95355411597467!3d-45.025046279098284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d527adaad9c65d%3A0xd73496f53184f7ec!2s34%20Coalpit%20Road%2C%20Gibbston%209371%2C%20New%20Zealand!5e0!3m2!1sen!2sro!4v1575332365336!5m2!1sen!2sro" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+
+
+					<h6 class="sectionTitle mt80">
+						<span>JOIN US</span>
+					</h6>
+
+					<div class="text mt30">
+						<p>
+							Special offers...
+						</p>
+					</div>
+
+					<div class="ctaArea">
+						<div class="ctaArea1">
+							YES HOOK ME UP!
+						</div>
+						<div class="ctaArea12 red">
+							THE CELLAR CLUB
+						</div>
+						<a href="#" class="redButton button">
+							JOIN HERE
+						</a>
+					</div>
+
+					<h6 class="sectionTitle mt80">
+						<span>HEAR FROM US</span>
+					</h6>
+
+					<div class="ctaArea">
+						<div class="ctaArea1">
+							JUST WANT THE NEWS AND NOT THE CLUB?
+						</div>
+						<div class="ctaArea12 red">
+							EMAIL NEWSLETTER
+						</div>
+						<a href="#" class="redButton button">
+							SIGN UP
+						</a>
+					</div>
+
+					<h6 class="sectionTitle mt80">
+						<span>FIND STOCKISTS</span>
+					</h6>
+
+					<div class="text mt30 text-center">
+						<p>
+							Find a list ot stockists <a href="@">here</a>.
+						</p>
+					</div>
+
+				</div>
+
+
+				
+				
+
+			</div>
+		</main>
+		@@include('../partials/components/footer.html')
+	</div>
+
+	@@include('../partials/scripts/common.html')
+
+ 
+</body>
+
+</html>

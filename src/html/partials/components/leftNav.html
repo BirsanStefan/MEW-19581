@@ -1,20 +1,63 @@
 <nav class="leftNav" id="leftNav">
     <div class="leftNavContent">
         <div class="backMenu">
-            <span id="backArrow" onclick="hideLeftNav()">
+            <span class="backArrow" onclick="hideLeftNav()">
                 <img src="./assets/images/hide-arrow.svg" alt="">
             </span>
         </div>
-        <button class="leftNavItem" id="dropdown" onclick="dropdownMenu()">Mount Edward</button>
-        <div class="leftNavItem dropdownContent">
-            <a class="leftNavSubitem" href="./aboutUs.html">about us</a>
-            <a class="leftNavSubitem" href="./team.html">team</a>
-            <a class="leftNavSubitem" href="./vineyards.html">vineyards</a>
-            <a class="leftNavSubitem" href="./wines.html">wines</a>
-        </div>
-        <a class="leftNavItem" href="./shop.html">shop</a>
-        <a class="leftNavItem" href="./cellarClub.html">cellar club</a>
-        <a class="leftNavItem" href="./library.html">the library</a>
-        <a class="leftNavItem" href="./contact">contact</a>
+
+        <ul class="leftMenu">
+            <li class="leftMenuItem">
+                <a href="javascript: void(0);" class="leftMenuItemLink hasSubmenu">Mount Edward</a>
+                <ul class="subMenu">
+                    <li class="subMenuItem">
+                        <a href="./aboutUs.html" class="subMenuItemLink">About us</a>
+                    </li>
+                    <li class="subMenuItem">
+                        <a href="./team.html" class="subMenuItemLink">Team</a>
+                    </li>
+                    <li class="subMenuItem">
+                        <a href="./vineyards.html" class="subMenuItemLink">Vineyards</a>
+                    </li>
+                    <li class="subMenuItem">
+                        <a href="./wines.html" class="subMenuItemLink">Wines</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="leftMenuItem">
+                <a href="./shop.html" class="leftMenuItemLink">Shop</a>
+            </li>
+            <li class="leftMenuItem">
+                <a href="./cellarClub.html" class="leftMenuItemLink">Cellar club</a>
+            </li>
+            <li class="leftMenuItem">
+                <a href="./blog.html" class="leftMenuItemLink">The library</a>
+            </li>
+            <li class="leftMenuItem">
+                <a href="./contact.html" class="leftMenuItemLink">Contact</a>
+            </li>
+            <li class="leftMenuItem topButtons">
+                <div class="headerIcons">
+                    <div class="headerIcon">
+                        <a href="#">
+                            <img src="./assets/images/user-white.svg" alt="">
+                            <span class="badge userBadge" style="display: none;">
+                                <span class="userBadgeSymbol"></span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="headerIcon">
+                        <a href="#">
+                            <img src="./assets/images/cart-white.svg" alt="">
+                            <span class="badge cardBadge" style="display: none;"> 16 </span>
+                        </a>
+                    </div>
+                    <div class="headerIcon">
+                        <a href="#"><img src="./assets/images/search-white.svg" alt=""></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
     </div>
 </nav>
